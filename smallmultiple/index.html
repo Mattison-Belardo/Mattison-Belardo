@@ -139,17 +139,17 @@
 	// att1format: enter the d3.format string to display the variables in the format you like
 	// Check this link on how to specify the desired format:
 	// https://observablehq.com/@d3/d3-format
-	var att1 = 'loudan_TractSNAP', att1alias = '% SNAP Benefits', att1format = '.0f',
-	att2 = 'loudan_TractKids', att2alias =  '% Kids 0-17', att2format = '.0f',
-	att3 = 'loudan_TractSeniors', att3alias = '% Seniors 65+', att3format = '.0f',
-	att4 = 'loudan_PovertyRate', att4alias = 'Poverty Rate', att4format = '.0f';
+	var att1 = 'TractSNAP', att1alias = '% SNAP Benefits', att1format = '.0f',
+	att2 = 'TractKids', att2alias =  '% Kids 0-17', att2format = '.0f',
+	att3 = 'TractSeniors', att3alias = '% Seniors 65+', att3format = '.0f',
+	att4 = 'PovertyRate', att4alias = 'Poverty Rate', att4format = '.0f';
 
   // enter below all variables that should be normalized. If you would like to multiple the variables
 	// with a constant value enter them in multiplyBy array. If there is no need for multiplication,
 	// simply enter 1 for each value in multiplyBy.
   var attributesToBeNormalized = [att1, att2, att3];
 	var multiplyBy = [100, 100, 100];
-	var divideBy = ['loudan_OHU2010', 'loudan_Pop2010', 'loudan_Pop2010'];
+	var divideBy = ['OHU2010', 'Pop2010', 'Pop2010'];
 	// if your variables are not raw counts and they are already normalized, comment out above, and
 	//uncomment below:
 	// var attributesToBeNormalized = [];
