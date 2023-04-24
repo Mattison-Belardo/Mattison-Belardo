@@ -139,17 +139,17 @@
 	// att1format: enter the d3.format string to display the variables in the format you like
 	// Check this link on how to specify the desired format:
 	// https://observablehq.com/@d3/d3-format
-	var att1 = 'FoodAccessResearchAtlasData2019 — Food Access Research Atlas_TractSNAP', att1alias = '% SNAP Benefits', att1format = '.0f',
-	att2 = 'FoodAccessResearchAtlasData2019 — Food Access Research Atlas_TractKids', att2alias =  '% Kids 0-17', att2format = '.0f',
-	att3 = 'FoodAccessResearchAtlasData2019 — Food Access Research Atlas_TractSeniors', att3alias = '% Seniors 65+', att3format = '.0f',
-	att4 = 'FoodAccessResearchAtlasData2019 — loundan_PovertyRate', att4alias = 'Poverty Rate', att4format = '.0f';
+	var att1 = 'Atlas_TractSNAP', att1alias = '% SNAP Benefits', att1format = '.0f',
+	att2 = 'Atlas_TractKids', att2alias =  '% Kids 0-17', att2format = '.0f',
+	att3 = 'Atlas_TractSeniors', att3alias = '% Seniors 65+', att3format = '.0f',
+	att4 = 'loundan_PovertyRate', att4alias = 'Poverty Rate', att4format = '.0f';
 
   // enter below all variables that should be normalized. If you would like to multiple the variables
 	// with a constant value enter them in multiplyBy array. If there is no need for multiplication,
 	// simply enter 1 for each value in multiplyBy.
   var attributesToBeNormalized = [att1, att2, att3];
 	var multiplyBy = [100, 100, 100];
-	var divideBy = ['FoodAccessResearchAtlasData2019 — loundan_OHU2010', 'FoodAccessResearchAtlasData2019 — loundan_Pop2010', 'FoodAccessResearchAtlasData2019 — loundan_Pop2010'];
+	var divideBy = ['loundan_OHU2010', 'loundan_Pop2010', 'loundan_Pop2010'];
 	// if your variables are not raw counts and they are already normalized, comment out above, and
 	//uncomment below:
 	// var attributesToBeNormalized = [];
